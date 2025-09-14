@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Automation_Skeleton(failed)">
     <classes>
-      <class name="TestCases.TC001">
+      <class name="TestCasess.TC001">
         <methods>
           <include name="verify_loginDDT" invocation-numbers="1"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- TestCases.TC001 -->
+      </class> <!-- TestCasess.TC001 -->
     </classes>
   </test> <!-- Automation_Skeleton(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

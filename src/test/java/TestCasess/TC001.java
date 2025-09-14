@@ -1,13 +1,10 @@
-package TestCases;
+package TestCasess;
 
 
 import PageObject.HomePage;
-import PageObject.InvalidPage_text;
 import PageObject.LoginPage;
 import PageObject.MyAccountPage;
 import TestBase.BaseClass;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
