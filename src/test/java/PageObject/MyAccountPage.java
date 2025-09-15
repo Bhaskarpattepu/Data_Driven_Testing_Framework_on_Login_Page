@@ -43,7 +43,8 @@ public class MyAccountPage extends BasePage {
     {
         try{
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            return wait.until(ExpectedConditions.textToBePresentInElement(txt_for_MyAccount,"My Account"));
+            boolean bool = wait.until(ExpectedConditions.textToBePresentInElement(txt_for_MyAccount,"My Account"));
+            return bool;
         }
         catch (Exception e)
         {

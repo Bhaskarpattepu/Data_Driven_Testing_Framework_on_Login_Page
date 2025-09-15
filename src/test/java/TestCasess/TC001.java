@@ -40,12 +40,12 @@ public class TC001 extends BaseClass {
                 String Actual_Result = "Valid";
                 myacc.logout();
                 myacc.click_continue_to_logout();
-                Assert.assertEquals(Actual_Result.trim().toLowerCase(),Actual_Result.trim().toLowerCase());
+                Assert.assertEquals(Actual_Result.trim().toLowerCase(),Expected_Result.trim().toLowerCase());
             }
             else
             {
                 String Actual_Result = "InValid";
-                Assert.assertEquals(Actual_Result.trim().toLowerCase(),Actual_Result.trim().toLowerCase());
+                Assert.assertEquals(Actual_Result.trim().toLowerCase(),Expected_Result.trim().toLowerCase());
             }
 
             logger.info("****** Finished TC003_LoginDDT ******");
