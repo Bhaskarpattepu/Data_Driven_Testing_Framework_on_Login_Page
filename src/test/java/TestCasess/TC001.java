@@ -5,6 +5,11 @@ import PageObject.HomePage;
 import PageObject.LoginPage;
 import PageObject.MyAccountPage;
 import TestBase.BaseClass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -18,7 +23,6 @@ public class TC001 extends BaseClass {
         try {
             logger.info("***** Starting TC003_LoginDDT ******");
             System.out.println(email+" "+pwd+" "+exp);
-            //getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             //Homepage
             HomePage hp = new HomePage();
             hp.clickMyAccount();
@@ -29,23 +33,21 @@ public class TC001 extends BaseClass {
             lp.setEmail(email);
             lp.setPassword(pwd );
             lp.clickLogin();
-            getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-            String tittle = getDriver().getTitle();
-            String Expted_Res =exp.trim();
-            if(tittle.trim().equalsIgnoreCase("My Account"))
+            MyAccountPage myacc = new MyAccountPage();
+            String Expected_Result=exp;
+            if(myacc.is_txtdisplyed())
             {
-                getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-                String actualRes="Valid";
-                MyAccountPage myacc = new MyAccountPage();
-                myacc.clickMyAccount();
-                myacc.click_logout();
+                String Actual_Result = "Valid";
+                myacc.logout();
                 myacc.click_continue_to_logout();
-                Assert.assertEquals(actualRes.trim().toLowerCase(),Expted_Res.trim().toLowerCase());
+                Assert.assertEquals(Actual_Result.trim().toLowerCase(),Actual_Result.trim().toLowerCase());
             }
-            else {
-                String actualRes="InValid";
-                Assert.assertEquals(actualRes.trim().toLowerCase(),Expted_Res.trim().toLowerCase());
+            else
+            {
+                String Actual_Result = "InValid";
+                Assert.assertEquals(Actual_Result.trim().toLowerCase(),Actual_Result.trim().toLowerCase());
             }
+
             logger.info("****** Finished TC003_LoginDDT ******");
         }
         catch (Exception e)

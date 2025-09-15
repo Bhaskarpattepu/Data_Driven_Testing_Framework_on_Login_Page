@@ -1,5 +1,6 @@
 package TestBase;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -23,6 +24,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.Properties;
 
@@ -93,24 +95,24 @@ public class BaseClass {
                 case "chrome" :
                     ChromeOptions chromeoptions = new ChromeOptions();
                     //chromeoptions.addArguments("--headless=new");
+                    //chromeoptions.addArguments("--incognito");
                     driver =new ChromeDriver(chromeoptions);
                     break;
                 case "edge" :
                     EdgeOptions edgeOptions = new EdgeOptions();
-
-                    //edgeOptions.addArguments("--headless=new");
+                    edgeOptions.addArguments("--headless=new");
+                    //edgeOptions.addArguments("--incognito");
                     driver = new EdgeDriver(edgeOptions);
                     break;
                 case "firefox" :
                     FirefoxOptions firefoxOptions = new FirefoxOptions();
                     //firefoxOptions.addArguments("--headless");
+                    //firefoxOptions.addArguments("-private");
                     driver = new FirefoxDriver(firefoxOptions); break;
                 default : System.out.println("invalid browser name in testng xml"); return;
             }
 
         }
-
-
 
         else
         {
@@ -129,33 +131,27 @@ public class BaseClass {
         }
 
         System.out.println("Launching URL: " + appUrl);
-
         getDriver().get(appUrl);
         getDriver().manage().window().maximize();
-
     }
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void tearDown() throws InterruptedException {
-
         if(getDriver() != null) {
             getDriver().quit();
             tlDriver.remove();
         }
     }
-
-    public static String captureScreen(String tname) throws IOException
-    {
+    public static String captureScreen(String tname) throws IOException {
         String timestamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-
-        TakesScreenshot takesScreenshot = (TakesScreenshot) getDriver();
-        File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-
-        String targetFilePath = System.getProperty("user.dir")+"\\screenshots\\"+tname+"_"+timestamp+".png";
-        File targetFile = new File(targetFilePath);
-        Files.copy(sourceFile.toPath(),targetFile.toPath());
-        //sourceFile.renameTo(targetFile);
+        String targetFilePath = System.getProperty("user.dir") + "\\screenshots\\" + tname + "_" + timestamp + ".png";
+        try {
+            TakesScreenshot takesScreenshot = (TakesScreenshot) getDriver();
+            File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
+            File targetFile = new File(targetFilePath);
+            FileUtils.copyFile(sourceFile, targetFile);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         return targetFilePath;
     }
-
-
 }

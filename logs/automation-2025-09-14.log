@@ -1,48 +1,32 @@
-19:36:30:0862 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:30:0897 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:30:0920 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:30:0939 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:30:0956 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:30:0971 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:30:0990 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:31:0015 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:31:0041 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:31:0056 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:31:0082 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:31:0110 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:31:0133 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:31:0154 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:31:0187 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:31:0213 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:31:0234 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:36:31:0267 [main] INFO  TestCasess.TC001 - ***** Starting TC003_LoginDDT ******
-19:36:32:0945 [main] INFO  TestCasess.TC001 - ***** Starting TC003_LoginDDT ******
-19:36:34:0079 [main] INFO  TestCasess.TC001 - ****** Finished TC003_LoginDDT ******
-19:36:34:0079 [main] INFO  TestCasess.TC001 - ***** Starting TC003_LoginDDT ******
-19:36:36:0834 [main] INFO  TestCasess.TC001 - ****** Finished TC003_LoginDDT ******
-19:36:36:0836 [main] INFO  TestCasess.TC001 - ***** Starting TC003_LoginDDT ******
-19:36:39:0750 [main] INFO  TestCasess.TC001 - ***** Starting TC003_LoginDDT ******
-19:36:41:0317 [main] INFO  TestCasess.TC001 - ***** Starting TC003_LoginDDT ******
-19:36:42:0300 [main] INFO  TestCasess.TC001 - ****** Finished TC003_LoginDDT ******
-19:36:42:0304 [main] INFO  TestCasess.TC001 - ***** Starting TC003_LoginDDT ******
-19:36:44:0249 [main] INFO  TestCasess.TC001 - ***** Starting TC003_LoginDDT ******
-19:36:45:0547 [main] INFO  TestCasess.TC001 - ****** Finished TC003_LoginDDT ******
-19:59:05:0057 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0537 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0585 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0632 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0664 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0680 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0711 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0752 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0776 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0801 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0827 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0853 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0871 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0894 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0912 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0933 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0948 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0964 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
-19:59:05:0979 [main] ERROR org.apache.poi.ooxml.POIXMLDocumentPart - Skipped invalid entry /xl/sharedlinks.xml
+23:21:54:0494 [main] INFO  TestCasess.TC001 - ***** Starting TC003_LoginDDT ******
+23:21:54:0504 [main] ERROR TestCasess.TC001 - org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5a9f52168fe1c3162deb6763618eacf, findElement {using=xpath, value=//a[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\Bhask\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51529/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5a9f52168fe1c3162deb6763618eacf
+23:21:54:0512 [main] INFO  TestCasess.TC001 - ***** Starting TC003_LoginDDT ******
+23:21:54:0527 [main] ERROR TestCasess.TC001 - org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5a9f52168fe1c3162deb6763618eacf, findElement {using=xpath, value=//a[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\Bhask\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51529/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5a9f52168fe1c3162deb6763618eacf
+23:21:54:0535 [main] INFO  TestCasess.TC001 - ***** Starting TC003_LoginDDT ******
+23:21:54:0540 [main] ERROR TestCasess.TC001 - org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5a9f52168fe1c3162deb6763618eacf, findElement {using=xpath, value=//a[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\Bhask\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51529/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5a9f52168fe1c3162deb6763618eacf
+23:21:54:0547 [main] INFO  TestCasess.TC001 - ***** Starting TC003_LoginDDT ******
+23:21:54:0553 [main] ERROR TestCasess.TC001 - org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5a9f52168fe1c3162deb6763618eacf, findElement {using=xpath, value=//a[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\Bhask\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51529}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51529/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5a9f52168fe1c3162deb6763618eacf

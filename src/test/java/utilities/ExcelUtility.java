@@ -55,7 +55,7 @@ public class ExcelUtility {
         wb = new XSSFWorkbook(fi);
         ws=wb.getSheet(xlSheet);
 
-        String data ="";
+        String data =null;
         try
         {
             row = ws.getRow(rownum);
