@@ -42,7 +42,7 @@ public class MyAccountPage extends BasePage {
     public boolean is_txtdisplyed()
     {
         try{
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
             boolean bool = wait.until(ExpectedConditions.textToBePresentInElement(txt_for_MyAccount,"My Account"));
             return bool;
         }

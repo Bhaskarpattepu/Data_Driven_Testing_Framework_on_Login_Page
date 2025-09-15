@@ -18,7 +18,7 @@ public class DataProviders {
             {
                 String username = xlutil.getCellData("Sheet1", i, 0);
                 String password = xlutil.getCellData("Sheet1", i, 1);
-                String Exp_Result = xlutil.getCellData("Sheet1",i,3);
+                String Exp_Result = xlutil.getCellData("Sheet1",i,2);
                 //  Skip if entire row is empty
                 if (username == null && password == null && Exp_Result==null ) {
                     continue;

@@ -35,17 +35,22 @@ public class TC001 extends BaseClass {
             lp.clickLogin();
             MyAccountPage myacc = new MyAccountPage();
             String Expected_Result=exp;
+            String trim_exp="";
+            if(Expected_Result!=null)
+            {
+                trim_exp=Expected_Result.trim().toLowerCase();
+            }
             if(myacc.is_txtdisplyed())
             {
                 String Actual_Result = "Valid";
                 myacc.logout();
                 myacc.click_continue_to_logout();
-                Assert.assertEquals(Actual_Result.trim().toLowerCase(),Expected_Result.trim().toLowerCase());
+                Assert.assertEquals(Actual_Result.trim().toLowerCase(),trim_exp);
             }
             else
             {
                 String Actual_Result = "InValid";
-                Assert.assertEquals(Actual_Result.trim().toLowerCase(),Expected_Result.trim().toLowerCase());
+                Assert.assertEquals(Actual_Result.trim().toLowerCase(),trim_exp);
             }
 
             logger.info("****** Finished TC003_LoginDDT ******");
