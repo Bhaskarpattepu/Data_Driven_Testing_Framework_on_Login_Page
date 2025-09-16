@@ -29,14 +29,9 @@ import java.util.Date;
 import java.util.Properties;
 
 public class BaseClass {
-
     private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
-
     public Logger logger;
-
-
     public Properties p;
-
     public static WebDriver getDriver() {
         return tlDriver.get();
     }
@@ -44,17 +39,12 @@ public class BaseClass {
     @BeforeClass
     @Parameters({"os","browser"})
     public void setUp(@Optional("windows") String os, @Optional("chrome") String browser) throws IOException {
-
         //Loading config.prperties file
         FileReader file = new FileReader("./src/test/resources/config.properties");
         p = new Properties();
         p.load(file);
-
-
         logger = LogManager.getLogger(this.getClass());
-
         WebDriver driver = null;
-
         if(p.getProperty("execution_env").equalsIgnoreCase("remote"))
         {
             try {
@@ -84,10 +74,7 @@ public class BaseClass {
             } catch (Exception e) {
                 throw new RuntimeException("Failed to initialize remote driver: " + e.getMessage());
             }
-
         }
-
-
         else if(p.getProperty("execution_env").equalsIgnoreCase("local"))
         {
             switch (browser.toLowerCase())
@@ -100,7 +87,7 @@ public class BaseClass {
                     break;
                 case "edge" :
                     EdgeOptions edgeOptions = new EdgeOptions();
-                    edgeOptions.addArguments("--headless=new");
+                    //edgeOptions.addArguments("--headless=new");
                     //edgeOptions.addArguments("--incognito");
                     driver = new EdgeDriver(edgeOptions);
                     break;
@@ -111,17 +98,13 @@ public class BaseClass {
                     driver = new FirefoxDriver(firefoxOptions); break;
                 default : System.out.println("invalid browser name in testng xml"); return;
             }
-
         }
-
         else
         {
             throw new RuntimeException("Invalid execution_env value in config.properties. Must be 'local' or 'remote'.");
         }
-
         // Set the driver into ThreadLocal
         tlDriver.set(driver);
-
         getDriver().manage().deleteAllCookies();
         getDriver().manage().window().maximize();
         String appUrl = p.getProperty("appUrl2"); //reading value from properties file
@@ -129,7 +112,6 @@ public class BaseClass {
         {
             throw new RuntimeException("appUrl2 is not defined in config.properties!");
         }
-
         System.out.println("Launching URL: " + appUrl);
         getDriver().get(appUrl);
         getDriver().manage().window().maximize();

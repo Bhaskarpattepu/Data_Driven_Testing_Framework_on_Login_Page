@@ -1,21 +1,11 @@
 package TestCasess;
-
-
 import PageObject.HomePage;
 import PageObject.LoginPage;
 import PageObject.MyAccountPage;
 import TestBase.BaseClass;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
-
 @Listeners(utilities.ExtentReportManager.class)
 public class TC001 extends BaseClass {
     @Test(dataProvider="LoginData",dataProviderClass = utilities.DataProviders.class )    //getting dataprovider from different class
@@ -23,17 +13,16 @@ public class TC001 extends BaseClass {
         try {
             logger.info("***** Starting TC003_LoginDDT ******");
             System.out.println(email+" "+pwd+" "+exp);
-            //Homepage
-            HomePage hp = new HomePage();
+            //Homepage object
+            HomePage hp = new HomePage(getDriver());
             hp.clickMyAccount();
             hp.clickLogin();
-            //Login Page
-            LoginPage lp = new LoginPage();
-
+            //Login Page object
+            LoginPage lp = new LoginPage(getDriver());
             lp.setEmail(email);
             lp.setPassword(pwd );
             lp.clickLogin();
-            MyAccountPage myacc = new MyAccountPage();
+            MyAccountPage myacc = new MyAccountPage(getDriver());
             String Expected_Result=exp;
             String trim_exp="";
             if(Expected_Result!=null)
