@@ -22,7 +22,7 @@ public class MyAccountPage extends BasePage {
     @FindBy(xpath = "//a[normalize-space()='My Account']")
     WebElement lnkMyAcoount;
 
-    @FindBy(xpath = "//a[normalize-space()='Logout'][1]")
+    @FindBy(xpath = "//div[@class='list-group']//a[text()='Logout']")
     WebElement element;
 
     @FindBy(xpath = "//div[@class='pull-right']//a[text()='Continue']")
@@ -30,7 +30,6 @@ public class MyAccountPage extends BasePage {
 
     public void logout() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        System.out.println("User is in clickMy Account in after login");
         WebElement my_account = wait.until(ExpectedConditions.elementToBeClickable(lnkMyAcoount));
         Actions actions = new Actions(driver);
         actions.moveToElement(lnkMyAcoount).perform();

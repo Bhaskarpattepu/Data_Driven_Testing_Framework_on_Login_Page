@@ -3,6 +3,7 @@ import PageObject.HomePage;
 import PageObject.LoginPage;
 import PageObject.MyAccountPage;
 import TestBase.BaseClass;
+import com.aventstack.extentreports.ExtentTest;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -50,5 +51,6 @@ public class TC001 extends BaseClass {
             logger.error(e.toString());
             Assert.fail("The testcase is failed due to"+e.toString());
         }
+
     }
 }

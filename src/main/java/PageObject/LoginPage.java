@@ -24,7 +24,6 @@ public class LoginPage extends BasePage {
     {
         if(email != null)
         {
-            System.out.println("Enter email");
             txtEmailAdress.clear();
             txtEmailAdress.sendKeys(email);
         }
@@ -34,14 +33,12 @@ public class LoginPage extends BasePage {
     {
         if(pwd != null)
         {
-            System.out.println("Enter Password");
             txtPassword.clear();
             txtPassword.sendKeys(pwd);
         }
     }
     public void clickLogin()
     {
-        System.out.println("Click Login after user enters login cred");
         btnLogin.click();
     }
 }
